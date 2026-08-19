@@ -1,0 +1,75 @@
+{
+  "name": "@wyre-technology/node-axcient",
+  "version": "0.0.0-semantically-released",
+  "type": "module",
+  "description": "Node.js/TypeScript client library for the Axcient x360Recover BCDR API",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "axcient",
+    "x360recover",
+    "bcdr",
+    "backup",
+    "disaster-recovery",
+    "msp",
+    "api",
+    "typescript"
+  ],
+  "author": "WYRE Technology",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyre-technology/node-axcient.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wyre-technology/node-axcient/issues"
+  },
+  "homepage": "https://github.com/wyre-technology/node-axcient#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.9",
+    "@semantic-release/npm": "^13.1.4",
+    "@types/node": "^22.0.0",
+    "msw": "^2.14.6",
+    "semantic-release": "^25.0.5",
+    "tsup": "^8.0.1",
+    "typescript": "^5.7.3",
+    "vitest": "^1.6.1"
+  }
+}
