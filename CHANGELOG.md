@@ -3,7 +3,7 @@
 
 ### Features
 
-* initial Axcient x360Recover API client ([9a9b6f2](https://github.com/wyre-technology/node-axcient/commit/9a9b6f25bba12c078423d47c61a6984df1394c39))
+* initial Axcient x360Recover API client ([9a9b6f2](https://github.com/WYRE-AI/node-axcient/commit/9a9b6f25bba12c078423d47c61a6984df1394c39))
 
 # Changelog
 
