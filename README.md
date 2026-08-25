@@ -1,4 +1,4 @@
-# @wyre-technology/node-axcient
+# @wyre-ai/node-axcient
 
 Node.js / TypeScript client library for the [Axcient x360Recover](https://developer.axcient.com/x360recover/)
 BCDR public API. Zero runtime dependencies — built on native `fetch`.
@@ -6,13 +6,13 @@ BCDR public API. Zero runtime dependencies — built on native `fetch`.
 ## Install
 
 ```bash
-npm install @wyre-technology/node-axcient
+npm install @wyre-ai/node-axcient
 ```
 
 ## Quick start
 
 ```typescript
-import { AxcientClient } from '@wyre-technology/node-axcient';
+import { AxcientClient } from '@wyre-ai/node-axcient';
 
 const axcient = new AxcientClient({ apiKey: process.env.AXCIENT_API_KEY! });
 
@@ -44,7 +44,7 @@ All response types mirror the API's wire format (snake_case field names) verbati
 pages automatically:
 
 ```typescript
-import { paginateOffset } from '@wyre-technology/node-axcient';
+import { paginateOffset } from '@wyre-ai/node-axcient';
 
 for await (const device of paginateOffset(
   (limit, offset) => axcient.devices.list({ limit, offset }),
@@ -57,7 +57,7 @@ for await (const device of paginateOffset(
 ## Error handling
 
 ```typescript
-import { NotFoundError, AuthenticationError, ValidationError } from '@wyre-technology/node-axcient';
+import { NotFoundError, AuthenticationError, ValidationError } from '@wyre-ai/node-axcient';
 
 try {
   await axcient.clients.get(999999);
