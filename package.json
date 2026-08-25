@@ -1,6 +1,6 @@
 {
   "name": "@wyre-ai/node-axcient",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Node.js/TypeScript client library for the Axcient x360Recover BCDR API",
   "main": "./dist/index.cjs",
